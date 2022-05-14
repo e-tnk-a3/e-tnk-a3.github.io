@@ -1,0 +1,26 @@
+footer {
+    min-height: 30vh;
+    background-color: #fff;
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        color: #222;
+        width: 65%;
+        height: 30vh;
+        margin: 0 auto;
+    }
+    .left-container,.right-container {
+        width: 45%;
+        padding: unset;        
+    }
+    .right-container {
+        p {
+            margin-bottom: 30px;            
+        }
+    }
+    img {
+        height: 15vh;
+    }
+}

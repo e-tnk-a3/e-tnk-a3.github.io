@@ -1,0 +1,905 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, sans-serif;
+}
+
+.g-font {
+  font-family: 'Abril Fatface';
+  letter-spacing: 2px;
+}
+
+/* fade-in-settings */
+.animate {
+  opacity: 0;
+}
+
+/* animation-settings */
+@-webkit-keyframes top-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-300px) scale(1);
+            transform: translateY(-300px) scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0px) scale(1);
+            transform: translateY(0px) scale(1);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: translateY(0px) scale(1);
+            transform: translateY(0px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+}
+@keyframes top-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-300px) scale(1);
+            transform: translateY(-300px) scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0px) scale(1);
+            transform: translateY(0px) scale(1);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: translateY(0px) scale(1);
+            transform: translateY(0px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+}
+
+@-webkit-keyframes display-none {
+  0% {
+    z-index: 999;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    z-index: -1;
+    display: none;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes display-none {
+  0% {
+    z-index: 999;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    z-index: -1;
+    display: none;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes typing {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 1px 1px 1px 1px #22222229;
+          box-shadow: 1px 1px 1px 1px #22222229;
+  z-index: 9;
+  background-color: #fff;
+  display: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+nav ul li {
+  width: 100%;
+  cursor: pointer;
+  list-style: none;
+  padding: 0px 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li .middle {
+  color: orange;
+  font-size: 20px;
+}
+
+nav ul li:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li:last-child div {
+  width: 50%;
+}
+
+nav.on {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background: none;
+  border: unset;
+  color: orange;
+  font-weight: bold;
+  z-index: 999;
+  display: none;
+}
+
+button :focus {
+  outline: 0;
+}
+
+button span {
+  display: block;
+  height: 2px;
+  width: 50px;
+  background-color: orange;
+  margin: 10px 0px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+button .close {
+  display: none;
+}
+
+button.on span:first-child {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+button.on span:nth-child(2) {
+  opacity: 0;
+}
+
+button.on span:nth-child(3) {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+button.on p {
+  margin-top: 30px;
+  display: none;
+}
+
+button.on p.close {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+main {
+  min-height: 100vh;
+}
+
+main section {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.opening {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+main section.opening .opening-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: url("../imgaes/top-bg.png") no-repeat;
+  background-size: cover;
+}
+
+main section.opening .opening-wrapper .image-wrapper {
+  width: 35vw;
+}
+
+main section.opening .opening-wrapper .image-wrapper img {
+  display: block;
+  margin: 0px auto;
+  height: 350px;
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main section.opening .opening-wrapper .top-text {
+  width: 50vw;
+}
+
+main section.opening .opening-wrapper .top-text h1 {
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 50px;
+  opacity: 0;
+  -webkit-animation: typing;
+          animation: typing;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  font-size: 2vw;
+  color: #484848;
+}
+
+main section.opening .opening-wrapper .top-text h3 span {
+  color: orange;
+}
+
+main section.about {
+  background: url(../imgaes/site-bg.png);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.about .left-container, main section.about .right-container {
+  padding-top: 100px;
+  width: 40%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0px 1vw;
+}
+
+main section.about .left-container h1 {
+  font-size: 48px;
+  color: orange;
+}
+
+main section.about .left-container h3 {
+  font-size: 32px;
+  color: orange;
+}
+
+main section.about .left-container p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 50px;
+  line-height: 2;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+main section.about .left-container p span {
+  color: #3d773f;
+  line-height: 75px;
+  font-weight: bold;
+}
+
+main section.about .right-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+main section.about .right-container .image-wrapper {
+  width: 365px;
+  height: 250px;
+  padding: 10px;
+  margin-bottom: 25px;
+  background-color: #3d773f;
+  border-radius: 10px;
+}
+
+main section.about .right-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section.about .right-container .image-wrapper.first {
+  width: 100%;
+  height: auto;
+}
+
+main section.about .bottom-container {
+  width: 85%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main section.about .bottom-container .image-wrapper {
+  width: 365px;
+  height: 250px;
+  padding: 10px;
+  margin-bottom: 25px;
+  background-color: #3d773f;
+  border-radius: 10px;
+}
+
+main section.about .bottom-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section.about .bottom-container .line img {
+  height: 40px;
+}
+
+main .line {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+main .line p {
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+main section.covid h1 {
+  position: relative;
+  font-size: 32px;
+  color: #a1c4fd;
+  width: 100%;
+  text-align: center;
+  margin: 50px 0px;
+  line-height: 1;
+}
+
+main section.covid h1 span {
+  font-size: 16px;
+  color: #222;
+  width: 150px;
+}
+
+main section.covid img {
+  position: absolute;
+  top: 100px;
+  right: 10vw;
+  height: 800px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  z-index: -1;
+}
+
+main section.covid .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 25px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50%;
+}
+
+main section.covid .container .card {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 50px;
+  padding: 2vw;
+  width: 15vw;
+  min-width: 300px;
+  height: 300px;
+  margin: 1vw;
+  z-index: 1;
+  -webkit-box-shadow: 0px 4px 1px 1px #fda0857d;
+  box-shadow: 0px 4px 1px 1px #fda0857d;
+}
+
+main section.covid .container .card span.no {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  background-color: #fda085;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+main section.covid .container .card span.sub-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #fda085;
+  margin-bottom: 25px;
+}
+
+main section.covid .container .card p {
+  line-height: 2;
+  font-size: 14px;
+  text-align: left;
+}
+
+main section.course {
+  min-height: 100vh;
+  background: url(../imgaes/top-bg.png);
+}
+
+main section.course .course-wrapper {
+  width: 65%;
+  margin: 0px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main section.course .course-wrapper h1 {
+  position: relative;
+  font-size: 32px;
+  color: orange;
+  width: 100%;
+  text-align: center;
+  margin: 50px 0px;
+  line-height: 1;
+}
+
+main section.course .course-wrapper h1 span {
+  font-size: 16px;
+  color: #222;
+  width: 150px;
+}
+
+main section.course .course-wrapper .lesson-course {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+main section.course .course-wrapper .lesson-course h3 {
+  margin-bottom: 15px;
+}
+
+main section.course .course-wrapper .lesson-course p {
+  font-size: 14px;
+}
+
+main section.course .course-wrapper .lesson-course h3.custom {
+  color: #B85CFF;
+}
+
+main section.course .course-wrapper .lesson-course h3.regular {
+  color: #73cc2f;
+}
+
+main section.course .course-wrapper .lesson-course label {
+  color: #222;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  width: 145px;
+  margin-right: 15px;
+}
+
+main section.course .course-wrapper .lesson-course span {
+  font-weight: bold;
+  font-size: 24px;
+  color: orange;
+}
+
+main section.course .course-wrapper .course-container {
+  min-width: 315px;
+  width: 20vw;
+  min-height: 500px;
+  font-size: 14px;
+  border-radius: 15px;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+main section.course .course-wrapper .course-container label.regular {
+  color: #fff;
+  font-weight: 400;
+  background-color: #73cc2f;
+  padding: 5px 10px;
+}
+
+main section.course .course-wrapper .course-container label.custom {
+  color: #fff;
+  font-weight: 400;
+  background-color: #B85CFF;
+  padding: 5px 10px;
+}
+
+main section.course .course-wrapper .course-container .course-header {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: solid 1px #333;
+  font-size: 16px;
+}
+
+main section.course .course-wrapper .course-container .course-body {
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 50px;
+}
+
+main section.course .course-wrapper .course-container .course-body ul li {
+  list-style: none;
+}
+
+main section.course .course-wrapper .course-container .course-body ul li p {
+  line-height: 2;
+}
+
+main section.course .course-wrapper .course-container .course-body ul li p.info {
+  line-height: 1;
+}
+
+main section.course .course-wrapper .course-container .course-body ul li .label {
+  display: inline-block;
+  width: 160px;
+  color: #222;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+main section.course .course-wrapper .course-container .course-body ul li .impact {
+  font-weight: bold;
+  font-size: 24px;
+  color: orange;
+}
+
+main section.course .course-wrapper .course-container .course-body ul li:first-child {
+  min-height: 200px;
+  margin-bottom: 50px;
+}
+
+main section.course .course-wrapper .course-container .course-body ul li:last-child {
+  margin-top: 20px;
+}
+
+main section.course .kids-lesson {
+  color: #73cc2f;
+  border-color: #73cc2f !important;
+}
+
+main section.course .el-lesson {
+  color: #53c9d2;
+  border-color: #53c9d2 !important;
+}
+
+main section.course .jh-lesson {
+  color: #5CA3FF;
+  border-color: #5CA3FF !important;
+}
+
+main section.course .hi-lesson {
+  color: #B85CFF;
+  border-color: #B85CFF !important;
+}
+
+main section.course .ca-lesson {
+  color: #FF5CA3;
+  border-color: #FF5CA3 !important;
+}
+
+main section.course .ad-lesson {
+  color: #FF675C;
+  border-color: #FF675C !important;
+}
+
+main section.campaign {
+  margin: 100px 0px;
+}
+
+main section.campaign .campaign-wrapper {
+  margin-top: 100px;
+  width: 65%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.campaign .campaign-wrapper h1 {
+  font-size: 32px;
+  width: 100%;
+  text-align: center;
+  color: orange;
+  margin-bottom: 100px;
+}
+
+main section.campaign .campaign-wrapper .img-container {
+  width: 45%;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(2px 4px 6px #2222);
+          filter: drop-shadow(2px 4px 6px #2222);
+}
+
+main section.campaign .campaign-wrapper .img-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section.infomation {
+  min-height: 100vh;
+  background: url(../imgaes/site-bg.png);
+}
+
+main section.infomation .infomation-wrapper {
+  margin-top: 100px;
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main section.infomation .infomation-wrapper h1 {
+  font-size: 32px;
+  width: 100%;
+  text-align: center;
+  margin: 100px 0px;
+}
+
+main section.infomation .infomation-wrapper .left-container,
+main section.infomation .infomation-wrapper .right-container {
+  width: 50%;
+  padding: unset;
+}
+
+main section.infomation .line {
+  width: 100%;
+  font-weight: bold;
+}
+
+main section.infomation .face-book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+main section.infomation .face-book p {
+  margin: 30px 0px;
+}
+
+footer {
+  min-height: 30vh;
+  background-color: #fff;
+}
+
+footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #222;
+  width: 65%;
+  height: 30vh;
+  margin: 0 auto;
+}
+
+footer .left-container, footer .right-container {
+  width: 45%;
+  padding: unset;
+}
+
+footer .right-container p {
+  margin-bottom: 30px;
+}
+
+footer img {
+  height: 15vh;
+}
+/*# sourceMappingURL=style.css.map */

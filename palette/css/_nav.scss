@@ -1,0 +1,98 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 1px #22222229;
+    z-index: 9;
+    background-color: #fff;
+    display: none;
+    transition: .5s;
+    transform: translateX(-100vw);
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100vh;
+        li {
+            width: 100%;
+            cursor: pointer;
+            list-style: none;
+            padding: 0px 30px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            .middle {
+                color: orange;
+                font-size: 20px;
+            }
+        }
+        li:last-child {
+             display: flex;
+            justify-content: space-around;
+            align-items: center;   
+            div {
+                width: 50%;
+            }
+        }
+    }
+}
+nav.on {
+    transform: translateX(0);
+}
+
+button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background: none;
+    border:unset;
+    color: orange;
+    font-weight: bold;
+    z-index: 999;
+    display: none;
+}
+button :focus {
+    outline: 0;
+}
+button span {
+    display: block;
+    height: 2px;
+    width: 50px;
+    background-color: orange;
+    margin: 10px 0px;
+    transition: .5s;
+}
+button .close {
+    display: none;
+}
+button.on span:first-child {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    transform: rotate(45deg);
+}
+button.on span:nth-child(2) {
+    opacity: 0;
+}
+button.on span:nth-child(3) {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    transform: rotate(135deg);
+}
+button.on p {
+    margin-top: 30px;
+    display: none;
+}
+button.on p.close {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}

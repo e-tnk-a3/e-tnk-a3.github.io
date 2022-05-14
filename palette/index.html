@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index-mobile.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
@@ -24,6 +24,12 @@
                 <a href="#about">
                     <span class="middle">教室について</span><br>
                     <span class="small g-font">ABOUT</span>
+                </a>
+            </li>
+            <li>
+                <a href="#covid">
+                    <span class="middle">コロナ対策</span><br>
+                    <span class="small g-font">HYGIENE</span>
                 </a>
             </li>
             <li>
@@ -67,27 +73,17 @@
         </button>
         <section class="opening">
             <div class="opening-wrapper">
-                <img src="./imgaes/logo1.png" alt="英会話教室ロゴ">
-                <h3 class="g-font"><span class="g-font">25</span>th Anniversary</h3>
+                <div class="image-wrapper">
+                    <img src="./imgaes/logo1.png" alt="英会話教室ロゴ">
+                </div>
+                <div class="top-text">
+                    <h1 class="g-font">
+                        Children have colours of their own.<br>
+                        ‘Palette’ is where all the colours can meet and grow. <br>
+                        Every colour welcome to ‘Palette the English Room’.
+                    </h1>
+                </div>
             </div>
-        </section>
-        <section id="top" class="top">
-            <div class="image-container animate" data-animate="fadeInUp" data-duration="1s" data-scrolla-offset="200">
-                <img src="https://images.pexels.com/photos/2526105/pexels-photo-2526105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    alt="">
-            </div>
-            <div class="top-wrapper animate" data-animate="fadeInUp" data-duration="1s" data-scrolla-offset="200">
-                <h1>おかげさまで<span>25</span>周年を迎えることが出来ました</h1>
-                <h3>これからも、『<span>英語</span>』という第二言語を身に付けることで、生徒さん一人一人の人生が大きく、明るく、楽しく広
-                    がっていくことが、教室の願いであり目標です。</h3>
-            </div>
-            <!--
-            <div class="line-pop">
-                <p>お問い合わせはLINEから♪</p>
-                <a href="https://lin.ee/mQ2zaR8"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
-                        alt="友だち追加" height="36" border="0"></a>
-            </div>
-            -->
         </section>
         <section id="about" class="about">
             <div class="left-container animate" data-animate="fadeInUp" data-duration="1s" data-scrolla-offset="200">
@@ -95,7 +91,7 @@
                 <h3 class="g-font">What is Palette the English Room ?</h3>
                 <p>
                     1996年4月に朝倉市(教室開設時は甘木市でした)堤に英語教室を開設しました。
-                    お陰様で、2020年4月に教室開設・25周年目を迎えます。
+                    お陰様で、2022年4月に教室開設・27周年目を迎えます。
                     これまで通って下さった沢山の生徒さん方、そして今通って下っている生徒の皆さまに
                     心から感謝いたしております。<br>
                     パレット英語・英会話教室では、幼児からシニアの方までが、それぞれの目的やご希望に沿って
@@ -109,6 +105,11 @@
                 </p>
             </div>
             <div class="right-container animate" data-animate="fadeInUp" data-duration="1s" data-scrolla-offset="200">
+                <div class="image-wrapper first">
+                    <img src="./imgaes/message.jpg" alt="">
+                </div>
+            </div>
+            <div class="bottom-container animate" data-animate="fadeInUp" data-duration="1s" data-scrolla-offset="200">
                 <div class=" image-wrapper">
                     <img src="./imgaes/lesson1.jpg" alt="">
                 </div>
@@ -121,12 +122,56 @@
                 <div class="image-wrapper">
                     <img src="./imgaes/site-pic.jpg" alt="">
                 </div>
-            </div>
-            <div class="bottom-container animate" data-animate="fadeInUp" data-duration="1s" data-scrolla-offset="200">
                 <div class="line">
                     <p>LINEアカウントのタイムラインから日々の教室風景等が見られます♪</p>
                     <a href="https://lin.ee/mQ2zaR8"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
                             alt="友だち追加" height="36" border="0"></a>
+                </div>
+            </div>
+        </section>
+        <section id="covid" class="covid">
+            <h1>
+                コロナ対策について<br>
+                <span>
+                    教室では生徒さんの安全を守るために、以下の対策を徹底しております。
+                </span>
+            </h1>
+            <img src="./imgaes/Kids using hand sanitizer at school-bro.png" alt="">
+            <div class="container">
+                <div class="card">
+                    <span class="no">1</span>
+                    <span class="sub-title">来室時検温</span>
+                    <p>
+                        教室にこられましたら、<br>まずは検温を行い、<br>
+                        平熱であるかを全生徒さんに確認しております。
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="no">2</span>
+                    <span class="sub-title">アルコール消毒</span>
+                    <p>
+                        検温を行った後、<br>
+                        手指のアルコール消毒を行っております。<br>
+                        また、レッスン終了後に使用したテーブル等にもアルコール消毒を徹底しております。
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="no">3</span>
+                    <span class="sub-title">マスクの着用</span>
+                    <p>
+                        飛沫感染リスクを減らすため、<br>
+                        必ずマスクの着用をお願いしております。<br>
+                        マスクを忘れた生徒さんには、教室でマスクを提供しております。
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="no">4</span>
+                    <span class="sub-title">室内換気</span>
+                    <p>
+                        小さな教室ですので、<br>
+                        空気が滞らないようにレッスン中は室内を開放し、<br>
+                        換気が出来るように心がけております。
+                    </p>
                 </div>
             </div>
         </section>
@@ -143,7 +188,7 @@
                 </div>
                 <div class="lesson-course animate" data-animate="fadeInUp" data-duration="1s" data-scrolla-offset="200">
                     <h3 class="custom">カスタムメイドレッスン</h3>
-                    <p>生徒さんのご都合の良い日程・時間帯でレッスンを行います。<br></p>
+                    <p>月2回より、生徒さんのご都合の良い日程・時間帯でレッスンを行います。<br></p>
                     <p>
                         <label>レッスン回数(月)</label><span>2</span>回～
                     </p>
@@ -432,7 +477,6 @@
             <div class="right-container">
                 <p>
                     教室代表・講師　田中理江<br>
-                    カスタムメイドレッスン講師　古賀敦子
                 </p>
                 <p>パレット英語英会話教室 Copyright (c) Palette the English Room &
                     <a href="https://e-tnk-a3.github.io/">EisukeTanaka</a>. All Rights Reserved.
