@@ -100,7 +100,7 @@
     }
 
     main section.about .bottom-container .line img {
-        height: 30px;
+        height: 30px !important;
     }
 
     main section.campaign .campaign-wrapper .img-container img {
