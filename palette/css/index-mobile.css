@@ -94,9 +94,9 @@
     }
 
     main section.opening .opening-wrapper .top-text h1 {
-        font-size: 4.8vw !important;
-        text-align: left;
-        padding-left: 10vw;
+        font-size: 20px !important;
+        text-align: left !important;
+        padding-left: 10vw !important;
     }
 
     main section.about .bottom-container .line img {
