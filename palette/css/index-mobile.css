@@ -1,171 +1,225 @@
-
 @media only screen and (max-width:1367px) {
-    .left-container, .right-container {
-        width: 45%!important ;
+
+    .left-container,
+    .right-container {
+        width: 45% !important;
     }
+
     .left-container h1 {
-        font-size: 32px!important ;
-        color: orange!important ;
+        font-size: 32px !important;
+        color: orange !important;
     }
+
     .left-container h3 {
-        font-size: 20px!important ;
-        color: orange!important ;
+        font-size: 20px !important;
+        color: orange !important;
     }
+
     .line {
-        width: 60%!important ;
+        width: 60% !important;
     }
+
     .opening-wrapper {
-        height: 100% !important ;
-        width: 100% !important ;
-        background: url(../imgaes/top-bg.png) no-repeat!important ;
-        background-size: contain!important ;
-        background-position: center center!important ;
+        height: 100% !important;
+        width: 100% !important;
+        background: url(../imgaes/top-bg.png) no-repeat !important;
+        background-size: contain !important;
+        background-position: center center !important;
     }
 }
+
 @media only screen and (max-width:1025px) {
     section.about {
-        padding-bottom: 50px!important ;
+        padding-bottom: 50px !important;
     }
-    .course-wrapper,.infomation-wrapper {
-        width: 75%!important ;
+
+    .course-wrapper,
+    .infomation-wrapper {
+        width: 75% !important;
     }
-    .infomation-wrapper .left-container, .infomation-wrapper .right-container {
-        padding-left: 10px!important ;
+
+    .infomation-wrapper .left-container,
+    .infomation-wrapper .right-container {
+        padding-left: 10px !important;
     }
 }
+
 /* mobile-settings */
 @media only screen and (max-width:1023px) {
+    .mobile-only {
+        display: block !important;
+    }
+
     body {
-        overflow-x: hidden !important ;
+        overflow-x: hidden !important;
     }
+
     nav {
-        display: block!important ;
-        background-image: url(../imgaes/site-bg.png)!important ;
+        display: block !important;
+        background-image: url(../imgaes/site-bg.png) !important;
     }
+
     nav ul {
-        background: url(../imgaes/top-bg-mobile.png) no-repeat!important ;
-        background-size: contain!important ;
-        background-position: center center!important ;
+        background: url(../imgaes/top-bg-mobile.png) no-repeat !important;
+        background-size: contain !important;
+        background-position: center center !important;
     }
+
     button {
-        display: block!important ;
+        display: block !important;
     }
+
     main section.opening .opening-wrapper {
-        display: flex!important ;
-        flex-wrap: wrap!important ;
-        align-items: center!important ;
-        align-content: center!important ;
-        background: url(../imgaes/top-bg-mobile.png) no-repeat!important ;
-        background-size: contain!important ;
-        background-position: center center!important ;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        align-content: center !important;
+        background: url(../imgaes/top-bg-mobile.png) no-repeat !important;
+        background-size: contain !important;
+        background-position: center center !important;
     }
+
     main section.opening .opening-wrapper .image-wrapper img {
-        height: 30vh!important ;
+        height: 30vh !important;
     }
+
     main section.opening .opening-wrapper .image-wrapper {
-        height: unset!important ;
-        width: 100vw !important ;
+        height: unset !important;
+        width: 100vw !important;
     }
+
     main section.opening .opening-wrapper .top-text {
-        width: 100vw !important ;
-        height: 20vh!important ;
+        width: 100vw !important;
+        height: 40vh !important;
     }
+
     main section.opening .opening-wrapper .top-text h1 {
-        font-size: 3vw!important ;
+        font-size: 4.8vw !important;
+        text-align: left;
+        padding-left: 10vw;
     }
+
+    main section.about .bottom-container .line img {
+        height: 30px;
+    }
+
     main section.campaign .campaign-wrapper .img-container img {
-        width: 100%!important ;
-        margin: auto!important ;
+        width: 100% !important;
+        margin: auto !important;
     }
+
     main section.covid img {
-        width: 90%!important ;
-        height: unset!important ;
+        width: 90% !important;
+        height: unset !important;
 
     }
+
     .top {
-        align-content: flex-start!important ;
+        align-content: flex-start !important;
     }
+
     .top .image-container {
-        height: 30vh!important ;
+        height: 30vh !important;
     }
+
     .top .image-container img {
-        filter: blur(1px) opacity(0.5)!important ;
+        filter: blur(1px) opacity(0.5) !important;
     }
+
     .top-wrapper {
-        width: 100% !important ;
-        margin: 10px 0px!important ;
+        width: 100% !important;
+        margin: 10px 0px !important;
     }
+
     .top-wrapper h1 {
-        font-size: 1.5rem!important ;
+        font-size: 1.5rem !important;
     }
+
     .top-wrapper h1 span {
-        font-size: 2rem!important ;
+        font-size: 2rem !important;
     }
+
     .top-wrapper h3 {
-        font-size: 18px!important ;
-        margin-top: 30px!important ;
+        font-size: 18px !important;
+        margin-top: 30px !important;
     }
-    .left-container, .right-container {
-        width: 100% !important ;
-        height: max-content!important ;
-        padding: 10px!important ;
-        padding-top: 100px!important ;
-    }
+
+    .left-container,
     .right-container {
-        padding-top: 50px!important ;
+        width: 100% !important;
+        height: max-content !important;
+        padding: 10px !important;
+        padding-top: 100px !important;
     }
+
+    .right-container {
+        padding-top: 50px !important;
+    }
+
     .right-container iframe {
-        width: 100%!important ;
+        width: 100% !important;
     }
+
     .left-container h1 {
-        font-size: 26px!important ;
+        font-size: 26px !important;
     }
+
     .left-container h3 {
-        font-size: 16px!important ;
-        color: orange!important ;
+        font-size: 16px !important;
+        color: orange !important;
     }
+
     section.about p {
-        font-size: 12px!important ;
-        margin-top: 35px!important ;
+        font-size: 12px !important;
+        margin-top: 35px !important;
     }
+
     section.about .left-container p {
-        font-size: 14px!important ;
+        font-size: 14px !important;
     }
+
     .line {
-        width: 98%!important ;
+        width: 98% !important;
     }
+
     .line p {
-        font-size: 16px!important ;
+        font-size: 16px !important;
     }
+
     .course-wrapper,
     .campaign-wrapper,
     .infomation-wrapper,
     .footer-wrapper {
-        width: 100% !important ;
+        width: 100% !important;
     }
+
     .campaign-wrapper .img-container,
     .infomation-wrapper .left-container,
     .infomation-wrapper .right-container,
     .footer-wrapper .left-container,
     .footer-wrapper .right-container {
-        width: 100% !important ;
-        padding: 10px!important ;
+        width: 100% !important;
+        padding: 10px !important;
     }
+
     .course-wrapper h1,
-    .campaign-wrapper h1, 
+    .campaign-wrapper h1,
     .infomation-wrapper h1,
     .covid h1 {
-        font-size: 24px!important ;
-        margin-bottom: 65px!important ;
+        font-size: 24px !important;
+        margin-bottom: 65px !important;
     }
+
     main section.covid h1 span {
         font-size: 12px;
 
     }
+
     main section.covid .container {
         width: 100%;
         padding-top: 300px;
     }
+
     main section.covid .container .card {
         padding: 2vw;
         width: 15vw;
@@ -173,78 +227,99 @@
         height: 200px;
         margin: 2vw;
     }
+
     main section.covid .container .card p {
         font-size: 12px;
     }
+
     main section.course .course-wrapper .course-container {
         min-height: auto;
     }
+
     main section.course .course-wrapper .lesson-course h3 {
         font-size: 16px;
     }
+
     main section.course .course-wrapper .lesson-course p,
     main section.course .course-wrapper .course-container .course-body ul li p {
         font-size: 12px;
     }
+
     main section.course .course-wrapper .course-container .course-body ul li .label {
         font-size: 14px;
     }
+
     main section.course .course-wrapper .course-container .course-body {
         margin-top: 15px;
     }
+
     main section.course .course-wrapper .course-container .course-body ul li:first-child {
         min-height: auto;
     }
+
     .image-wrapper {
-        height: 14vh!important ;
-        width: 48%!important ;
-        padding: 5px!important ;
+        height: 14vh !important;
+        width: 48% !important;
+        padding: 5px !important;
     }
+
     main section.about .right-container .image-wrapper.first {
         width: 100% !important;
         height: auto !important;
     }
+
     .footer-wrapper .left-container {
-        text-align: center!important ;
+        text-align: center !important;
     }
+
     footer p {
-        font-size: 12px!important ;
+        font-size: 12px !important;
     }
 }
+
 @media only screen and (max-width: 376px) {
     .left-container h1 {
-        font-size: 24px!important ;
+        font-size: 24px !important;
     }
+
     .image-wrapper {
-        height: 14vh!important ;
-        width: 48%!important ;
+        height: 14vh !important;
+        width: 48% !important;
     }
+
     .opening-wrapper h1 span {
-        width: 110px!important ;
-        height: 110px!important ;
+        width: 110px !important;
+        height: 110px !important;
     }
 }
+
 @media only screen and (max-width: 321px) {
     .left-container h1 {
-        font-size: 20px!important ;
+        font-size: 20px !important;
     }
+
     .left-container h3 {
-        font-size: 14px!important ;
+        font-size: 14px !important;
     }
+
     section.about p {
-        font-size: 12px!important ;
+        font-size: 12px !important;
     }
+
     .opening-wrapper h1 {
-        font-size: 1.5rem!important ;
+        font-size: 1.5rem !important;
     }
+
     h1 span {
-        font-size: 3rem!important ;
+        font-size: 3rem !important;
     }
+
     .opening-wrapper h1 span {
-        width: 85px!important ;
-        height: 85px!important ;
+        width: 85px !important;
+        height: 85px !important;
     }
+
     .opening-wrapper h3 {
-        font-size: 2rem!important ;
+        font-size: 2rem !important;
     }
 }

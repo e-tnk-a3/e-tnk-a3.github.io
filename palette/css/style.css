@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +10,10 @@
 .g-font {
   font-family: 'Abril Fatface';
   letter-spacing: 2px;
+}
+
+.mobile-only {
+  display: none;
 }
 
 /* fade-in-settings */
@@ -357,7 +360,9 @@ main section.opening .opening-wrapper .top-text h1 {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   font-size: 2vw;
+  font-style: italic;
   color: #484848;
+  line-height: 2;
 }
 
 main section.opening .opening-wrapper .top-text h3 span {
@@ -374,7 +379,8 @@ main section.about {
           justify-content: center;
 }
 
-main section.about .left-container, main section.about .right-container {
+main section.about .left-container,
+main section.about .right-container {
   padding-top: 100px;
   width: 40%;
   height: -webkit-max-content;

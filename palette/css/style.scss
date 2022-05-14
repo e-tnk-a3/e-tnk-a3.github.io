@@ -4,62 +4,79 @@
     box-sizing: border-box;
     font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, sans-serif;
 }
+
 .g-font {
     font-family: 'Abril Fatface';
     letter-spacing: 2px;
 }
+
+.mobile-only {
+    display: none;
+}
+
 /* fade-in-settings */
 .animate {
     opacity: 0;
 }
+
 /* animation-settings */
 @keyframes top-animation {
     0% {
         opacity: 0;
         transform: translateY(-300px) scale(1);
     }
+
     50% {
         opacity: 1;
         transform: translateY(0px) scale(1);
     }
+
     90% {
         opacity: 1;
         transform: translateY(0px) scale(1);
     }
+
     100% {
         opacity: 0;
         transform: scale(0.1);
     }
 }
+
 @keyframes display-none {
     0% {
         z-index: 999;
         transform: scale(1);
     }
+
     100% {
         z-index: -1;
         display: none;
         transform: scale(0);
     }
 }
+
 @keyframes typing {
     0% {
         opacity: 0;
         transform: translateY(200px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px);
     }
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
+
 @import 'nav';
 @import 'main';
 @import 'footer';
