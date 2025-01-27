@@ -290,6 +290,61 @@ main section {
       flex-wrap: wrap;
 }
 
+main section strong {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(80%, #f78da8d5));
+  background: linear-gradient(to bottom, transparent 80%, #f78da8d5 80%);
+}
+
+main section.news {
+  padding: 5vw 0;
+}
+
+main section.news .container {
+  width: 80vw;
+  min-width: 320px;
+  margin: auto;
+}
+
+main section.news .container h1 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3vw;
+}
+
+main section.news .container h1 span {
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: orange;
+}
+
+main section.news .container ul li {
+  list-style: none;
+}
+
+main section.news .container ul li div {
+  border: 1px solid #eaeaea;
+  padding: 1em;
+  color: #333;
+}
+
+main section.news .container ul li .title {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+main section.news .container ul li .text {
+  padding: 2em;
+  border-top-width: 0px;
+}
+
+main section.news .container ul li .text p {
+  line-height: 2;
+}
+
 main section.opening {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -653,7 +708,7 @@ main section.course .course-wrapper .lesson-course p {
 }
 
 main section.course .course-wrapper .lesson-course h3.custom {
-  color: #B85CFF;
+  color: #b85cff;
 }
 
 main section.course .course-wrapper .lesson-course h3.regular {
@@ -697,7 +752,7 @@ main section.course .course-wrapper .course-container label.regular {
 main section.course .course-wrapper .course-container label.custom {
   color: #fff;
   font-weight: 400;
-  background-color: #B85CFF;
+  background-color: #b85cff;
   padding: 5px 10px;
 }
 
@@ -763,23 +818,23 @@ main section.course .el-lesson {
 }
 
 main section.course .jh-lesson {
-  color: #5CA3FF;
-  border-color: #5CA3FF !important;
+  color: #5ca3ff;
+  border-color: #5ca3ff !important;
 }
 
 main section.course .hi-lesson {
-  color: #B85CFF;
-  border-color: #B85CFF !important;
+  color: #b85cff;
+  border-color: #b85cff !important;
 }
 
 main section.course .ca-lesson {
-  color: #FF5CA3;
-  border-color: #FF5CA3 !important;
+  color: #ff5ca3;
+  border-color: #ff5ca3 !important;
 }
 
 main section.course .ad-lesson {
-  color: #FF675C;
-  border-color: #FF675C !important;
+  color: #ff675c;
+  border-color: #ff675c !important;
 }
 
 main section.campaign {
