@@ -336,13 +336,31 @@ main section.news .container ul li .title {
   font-size: 18px;
 }
 
+@media (max-width: 501px) {
+  main section.news .container ul li .title {
+    font-size: 16px;
+  }
+}
+
 main section.news .container ul li .text {
   padding: 2em;
   border-top-width: 0px;
 }
 
+@media (max-width: 501px) {
+  main section.news .container ul li .text {
+    padding: 1em;
+  }
+}
+
 main section.news .container ul li .text p {
   line-height: 2;
+}
+
+@media (max-width: 501px) {
+  main section.news .container ul li .text p {
+    font-size: 12px;
+  }
 }
 
 main section.opening {
