@@ -462,6 +462,13 @@ main section.works .craft-list .craft .craft-body h3 {
   border-bottom: 1px solid #eaeaea;
 }
 
+@media (max-width: 575px) {
+  main section.craft .craft-list .craft .craft-body h3,
+  main section.works .craft-list .craft .craft-body h3 {
+    margin-bottom: 50px;
+  }
+}
+
 main section.craft .craft-list .craft .craft-body .craft-item,
 main section.works .craft-list .craft .craft-body .craft-item {
   display: -webkit-box;
