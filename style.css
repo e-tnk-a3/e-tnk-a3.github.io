@@ -482,7 +482,11 @@ main section.works .craft-list .craft .craft-body .craft-item span svg {
 
 main section.craft .craft-list .craft .craft-body .craft-item a,
 main section.works .craft-list .craft .craft-body .craft-item a {
+  display: inline-block;
+  padding-left: 10px;
   color: #fff;
+  font-weight: 400;
+  font-family: "Noto Sans JP";
 }
 
 main section.craft .craft-list .craft .craft-foot,

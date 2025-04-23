@@ -358,7 +358,11 @@ main {
               }
             }
             a {
+              display: inline-block;
+              padding-left: 10px;
               color: #fff;
+              font-weight: 400;
+              font-family: "Noto Sans JP";
             }
           }
         }
