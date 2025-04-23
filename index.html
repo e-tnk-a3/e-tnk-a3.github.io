@@ -1,164 +1,601 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/index-mobile.css">
-    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-    <title>EISUKE TANAKA WEBATELIE</title>
-</head>
+    <title>
+      福岡のフロントエンド・マークアップエンジニア｜Eisuke Tanaka ポートフォリオ
+    </title>
+    <meta
+      name="description"
+      content="福岡を拠点に活動するフロントエンドエンジニア・マークアップエンジニア、Eisuke Tanakaのポートフォリオサイトです。Web制作、UI設計、React/HTML/CSSコーディングなど対応可能。"
+    />
+    <meta
+      name="keywords"
+      content="福岡, フロントエンドエンジニア, マークアップエンジニア, Web開発, React, ポートフォリオ, Eisuke Tanaka"
+    />
 
-<body>
-    <nav>
-        <img src="./images/ink.png" alt="" class="ink">
-        <img src="./images/ink2.png" alt="" class="ink-bottom">
+    <meta
+      property="og:title"
+      content="Eisuke Tanaka｜福岡のフロントエンド・マークアップエンジニア ポートフォリオ"
+    />
+    <meta
+      property="og:description"
+      content="福岡を拠点に活動するWeb開発者のポートフォリオ。HTML/CSS/JavaScriptでの高品質なフロントエンド制作。"
+    />
+    <meta
+      property="og:image"
+      content="https://example.com/your-thumbnail.jpg"
+    />
+    <meta property="og:url" content="https://your-portfolio-url.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- フォントなど -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
         <ul>
-            <li>
-                <a href="https://github.com/e-tnk-a3/e-tnk-a3.github.io">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/TNK_6812">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-            </li>
+          <li><a href="#profile">PROFILE</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#craft">CRAFT</a></li>
+          <li><a href="#i-do">W I DO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
-    </nav>
-    <main id="luxy">
-        <section class="top luxy-el" data-speed-y="20" data-offset="50">
-            <div class="wrapper">
-                <h1>I <span class="gray">AM</span> EISUKE .</h1>
-                <div class="logo"></div>
-                <div class="block white"></div>
+      </nav>
+    </header>
+    <main>
+      <div class="circular-text">
+        <span id="rotated">PLZ SCROLL PLZ SCROLL PLZ SCROLL</span>
+      </div>
+      <section class="top bg-hougan">
+        <div class="text-wrapper">
+          <div class="slide-wrapper">
+            <p>WELL COME TO MY PORTFOLIO</p>
+            <p>WELL COME TO MY PORTFOLIO</p>
+          </div>
+        </div>
+        <div class="text-wrapper bottom">
+          <div class="slide-wrapper">
+            <p>WELL COME TO MY PORTFOLIO</p>
+            <p>WELL COME TO MY PORTFOLIO</p>
+          </div>
+        </div>
+        <div class="container">
+          <h1 class="typing-container">HELLO WORLD ;</h1>
+          <p class="typing-container delay">I AM EISUKE TANAKA ;</p>
+          <div class="flow"></div>
+        </div>
+      </section>
+      <section class="profile" id="profile">
+        <div class="container">
+          <div class="left-container headline">
+            <div class="section-header">
+              <h2>PROFILE</h2>
+              <span>私について</span>
             </div>
-        </section>
-        <section class="about luxy-el" data-speed-y="5" data-offset="-50">
-            <div class="wrapper">
-                <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
-                    About
-                    <a href="https://twitter.com/TNK_create?s=17" target="_blank">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                </h1>
-                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="400">
-                    福岡にてフリーランスで活動している、Webデザイン/マークアップエンジニアです。<br>
-                    2015年から2018年までプログラマをしておりました。<br>
-                    Webアプリの中身ではなく、イメージを形にしてご提供したいと感じ、<br>
-                    現在は日々勉強をしながらフリーランス活動をしております。
-                </p>
-                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="400">
-                    田中　英輔 - TanakaEisuke<br>
-                    1994年　8月12日生まれ<br>
-                    趣味：楽器・音楽鑑賞
-                </p>
+            <div class="image-wrapper">
+              <img src="./img/40166.jpg" alt="" />
             </div>
-            <img src="./images/profile.JPG" alt="" class="luxy-el wow fadeIn" data-horizontal="1" data-speed-x="8"
-                data-wow-duration="1s" data-wow-offset="500">
-        </section>
-        <section class="designs luxy-el" data-horizontal="1" data-speed-x="-2">
-            <div class="wrapper">
-                <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">WebDesigns</h1>
-                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
-                    HTML/CSS/JavaScriptを使用した小技や、ちょっとしたデザインをまとめています。<br>
-                    作成する際は自分の中でテーマを決め、テーマに沿う素材選びを意識しています。<br>
-                    フロントエンドはどんどん進化し映像制作のような領域になりつつあるので、<br>
-                    最近は特にアニメーションを集中して取り入れています。
-                </p>
-                <button class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
-                    <p>VIEW ALL</p>
-                </button>
+            <p>田中 英輔　-　EISUKE TANAKA</p>
+          </div>
+          <div class="right-container headline">
+            <ul>
+              <li class="profile-item half">
+                <div class="item-header">
+                  <h3>The Origin</h3>
+                  <span>生年月日</span>
+                </div>
+                <div class="item-body">
+                  <span>1994 - 08 - 12</span>
+                </div>
+              </li>
+              <li class="profile-item half">
+                <div class="item-header">
+                  <h3>The Nest</h3>
+                  <span>活動拠点</span>
+                </div>
+                <div class="item-body">
+                  <span>Fukuoka Asakura City</span>
+                </div>
+              </li>
+              <li class="profile-item">
+                <div class="item-header">
+                  <h3>The Skill</h3>
+                  <span>スキル / 保有資格</span>
+                </div>
+                <div class="item-body">
+                  <ul>
+                    <li>【国家資格】基本情報技術者</li>
+                    <li>
+                      <span class="skill-label"> HTML CSS JavaScript </span>
+                      <span> 9年以上 </span>
+                    </li>
+                    <li>
+                      <span class="skill-label"> jQuery </span>
+                      <span> 5年以上 </span>
+                    </li>
+                    <li>
+                      <span class="skill-label"> Vue.js </span>
+                      <span> 2年以上 </span>
+                    </li>
+                    <li>
+                      <span class="skill-label"> Java </span>
+                      <span> 3年以上 </span>
+                    </li>
+                    <li>
+                      <span class="skill-label"> ruby </span>
+                      <span> 1年以上 </span>
+                    </li>
+                    <li>
+                      <span class="skill-label"> WordPress </span>
+                      <span> 3年以上 </span>
+                    </li>
+                    <li>
+                      <span class="skill-label"> SQL </span>
+                      <span> 3年以上 </span>
+                    </li>
+                    <li>
+                      <span class="skill-label"> MongoDB </span>
+                      <span> 1年以上 </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="profile-item">
+                <div class="item-header">
+                  <h3>The Journey</h3>
+                  <span>職歴 / 経験</span>
+                </div>
+                <div class="item-body">
+                  <p>2015年からITを学びプログラマとして勤務開始</p>
+                  <p>
+                    請負開発・SESの経験を得てフリーランスエンジニアとして独立
+                  </p>
+                  <p>
+                    企業（事業）サイトの立ち上げや、SNS・Googleツールを取り扱ったオンライン進出支援のサポートを行う
+                  </p>
+                  <p>
+                    プログラマとしての経験を活かし、接客業・地方公務員事務など異業種の業務改善効率アプリなどの開発も行う。
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="works" id="works">
+        <div class="header-wrapper bg-hougan">
+          <div class="container">
+            <div class="section-header -c">
+              <h2>WORKS</h2>
+              <span>業務実績</span>
             </div>
-            <div class="photos luxy-el wow fadeIn" data-horizontal="1" data-speed-x="2" data-wow-duration="1s"
-                data-wow-offset="600">
-                <div class="slide">
-                    <div class="sliders">
-                        <div class="image-container">
-                            <img src="./images/practice16.png" alt="">
-                            <h3>SVG Animation</h3>
-                        </div>
-                        <div class="image-container">
-                            <img src="./images/practice14.png" alt="">
-                            <h3>HoverEffect Animation</h3>
-                        </div>
-                        <div class="image-container">
-                            <img src="./images/practice13.png" alt="">
-                            <h3>Transition Animation</h3>
-                        </div>
-                        <div class="image-container">
-                            <img src="./images/practice10.png" alt="">
-                            <h3>Movie Background</h3>
-                        </div>
-                        <div class="image-container">
-                            <img src="./images/practice07.png" alt="">
-                            <h3>Slide Animation</h3>
-                        </div>
-                        <div class="image-container">
-                            <img src="./images/practice06.png" alt="">
-                            <h3>Typing Animation</h3>
-                        </div>
+          </div>
+        </div>
+        <div class="craft-list headline swiper">
+          <div class="swiper-wrapper">
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/004.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>ZEROSTART ホームページ作成</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト制作</span>
+                <span>サービス開発</span>
+                <span>WordPress</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/005.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>株式会社スヤマ　WEBサイト作成</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト制作</span>
+                <span>WordPress</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/012.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>株式会社ハートカンパニー　WEBサイト作成</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト制作</span>
+                <span>WordPress</span>
+              </div>
+            </div>
 
-                    </div>
-                </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/001.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>地図アプリ画面モック開発</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBアプリ制作</span>
+                <span>マークアップ</span>
+              </div>
             </div>
-        </section>
-
-        <section class="skill luxy-el" data-speed-y="2">
-            <div class="wrapper">
-                <div class="left-container">
-                    <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
-                        Skill
-                        <a href="https://github.com/e-tnk-a3/e-tnk-a3.github.io" target="_blank">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </h1>
-                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
-                        <span>HTML5/CSS3/JavaScript</span>使用経験4年<br>
-                        <span>Java </span>使用経験2年<br>
-                        <span>ruby</span>使用経験1年半<br>
-                        <span>MySQL</span>使用経験3年<br>
-                    </p>
-                </div>
-                <div class="right-container">
-                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
-                        <span>HTML5</span>デザインデータ等画像を基にコードに起こすことが可能<br>
-                        <span>CSS3</span>レイアウトの調整はもちろん、アニメーションの付与が可能<br>
-                        <span>JavaScript/jQuery</span>DOM操作・非同期通信等が可能
-                    </p>
-                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="500">
-                        マークアップを行う際はデータの形式を考慮したDOM設計や、
-                        バックエンド側の処理とライブラリの相性を考慮したご提案、<br>
-                        ソースコードの保守性や規則性も気にかけております。<br>
-                        プログラマとして得たMVC知識を取り入れたフロントエンドのコード設計を常に意識しています。<br>
-                    </p>
-                </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/014.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>レジ違算管理アプリ</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBアプリ制作</span>
+                <span>Vue.js</span>
+              </div>
             </div>
-            <img class="java-img luxy-el" src="./images/javaicon.png" alt="" data-horizontal="1" data-speed-x="-7">
-            <img class="mySql-img luxy-el" src="./images/mySql.png" alt="" data-horizontal="1" data-speed-x="6">
-            <img class="ruby-img luxy-el" src="./images/ruby.png" alt="" data-horizontal="1" data-speed-x="-5"
-                data-speed-y="-1">
-            <img class="view-img luxy-el" src="./images/html5css3js_01.png" alt="" data-horizontal="1" data-speed-y="-3"
-                data-speed-x="5">
-        </section>
-        <footer>
-            <div class="end-msg">
-                <p class="cd-modal-trigger">Thank you for viewing.</p>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/003.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>一般財団法人サイト：ページ内検索機能追加</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト改修</span>
+              </div>
             </div>
-        </footer>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/008.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>結婚相談所WEBサイトテンプレート作成</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト作成</span>
+                <span>WordPress</span>
+                <span>テンプレート</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/009.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>保育園WEBサイトテンプレート作成</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト作成</span>
+                <span>WordPress</span>
+                <span>テンプレート</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/007.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>音楽教室サイト　マークアップ</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト制作</span>
+                <span>マークアップ</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/006.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>ゲーム公式サイト　マークアップ</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト制作</span>
+                <span>マークアップ</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/013.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>テイクアウトアプリ開発</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBアプリ開発</span>
+                <span>フロントエンド</span>
+                <span>Vue.js</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/017.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>窓フィルム事業　WEBサイト作成</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト制作</span>
+                <span>オンライン支援</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/011.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>英会話教室　WEBサイト作成</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト制作</span>
+                <span>オンライン支援</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/015.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>ホワイトボードアプリ開発</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBアプリ開発</span>
+                <span>フロントエンド</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="craft" id="craft">
+        <div class="header-wrapper bg-hougan">
+          <div class="container">
+            <div class="section-header -c">
+              <h2>CRAFT</h2>
+              <span>制作実績</span>
+            </div>
+          </div>
+        </div>
+        <div class="craft-list headline swiper">
+          <div class="swiper-wrapper">
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/010.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>ビジネスサイトサンプル</h3>
+                <div class="craft-item">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      width="24"
+                      height="24"
+                      stroke-width="1"
+                    >
+                      <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                      ></path>
+                    </svg>
+                  </span>
+                  <a href="" target="_blank">コードを見る</a>
+                </div>
+                <div class="craft-item">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      width="24"
+                      height="24"
+                      stroke-width="1"
+                    >
+                      <path
+                        d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"
+                      ></path>
+                      <path d="M11 13l9 -9"></path>
+                      <path d="M15 4h5v5"></path>
+                    </svg>
+                  </span>
+                  <a href="" target="_blank">モックを見る</a>
+                </div>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト開発</span>
+                <span>WordPress</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/biyou_sample.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>美容系WEBサイトサンプル</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト開発</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/template01.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>Three.jsサイトサンプル</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト開発</span>
+                <span>Three.js</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/dark_sample.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>ダークテーマサイトサンプル</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/suyama-corporation.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>旧：株式会社スヤマ　WEBサイト</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト開発</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/016.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>工務店WEBサイトサンプル</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト開発</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/hair_salon.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>美容室WEBサイトサンプル</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト開発</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/vtuber.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>VLiver事務所サイトサンプル</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト開発</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/re_site.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>企業WEBサイトサンプル</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBサイト開発</span>
+              </div>
+            </div>
+            <div class="craft swiper-slide">
+              <div class="craft-header">
+                <img src="./img/002.png" alt="" />
+              </div>
+              <div class="craft-body">
+                <h3>トレーニング管理WEBアプリ</h3>
+              </div>
+              <div class="craft-foot">
+                <span>WEBアプリ開発</span>
+                <span>Python</span>
+                <span>DJango</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="i-do" id="i-do">
+        <div class="header-wrapper bg-hougan">
+          <div class="container">
+            <div class="section-header">
+              <h2>WHAT I DO ──???</h2>
+              <span>私の強み・出来ること</span>
+            </div>
+          </div>
+        </div>
+        <div class="container headline">
+          <div class="left-container">
+            <p>
+              私が特に得意としている部分はデザインデータを基に画面開発を行うマークアップエンジニア業務です。
+              デザインデータがなくとも画像ファイル、あるいは紙媒体からでも再現度の高い画面開発を行えます。
+              ネイティブなCSS表現に特に強く、一見素材を加工した後実装することが想定されていそうなデザインでもCSSによる表現が可能です。
+              CSSで表現が可能ということは、CSSアニメーションに落とし込むことも可能になりますので、サイト表現の選択肢が増えます。
+              スクロールを起点としたCSSアニメーション等も得意です。
+            </p>
+            <p>
+              バックボーンとしてプログラマやエンジニアとしての勤務がありますので、サーバーサイドを考慮したDOM設計が可能。
+              マークアップだけでなくデータ連携を中心としたJavaScriptの実装や、WEBアプリケーションのフロントエンド部分の開発も可能です。
+              ブランクはありますがサーバーサイドの知識と経験もあるので、小規模なデータ設計と実装なら可能です。
+            </p>
+            <p>
+              独立後はWordPressを用いたWEBのサイト開発を中心としており、オリジナルテーマの開発が可能です。
+              クライアントのアピールしたいコンテンツをヒアリングし、WordPressの構造上どのようなデータ管理が最適か考慮した実装を心がけています。<br />
+              また、サイト制作後の情報分析（GoogleAnalytics・GoogleSearchConsole）も行っており、WEBサイトを効率よく運営していく上で抑えておきたいポイントも含めクライアントにサービス提供が可能です。
+            </p>
+            <p>
+              WEBサイトの制作やテンプレートの制作を行うにあたってデザインから考えることは少なくありませんでしたが、デザイン自体はあまり得意ではないです。
+              WEBアプリ等の開発環境構築やサーバー設計等のインフラ部分は完全に苦手分野になりますのでご容赦ください。
+            </p>
+          </div>
+          <div class="right-container"></div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="header-wrapper bg-hougan">
+          <div class="container">
+            <div class="section-header -c">
+              <h2>CONTACT</h2>
+              <span>お問い合わせ</span>
+            </div>
+          </div>
+        </div>
+        <div class="container headline">
+          <p>現在新規ご依頼の受付は一時停止しております。</p>
+          <p>受付再開した際にはどうぞよろしくお願い致します。</p>
+          <p>少しでもみなさまのお力になれましたら幸いです！</p>
+          <div class="image-wrapper">
+            <img src="./img/1513421766-1.png" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="./js/plugins/hover-effect.umd.js"></script>
-    <script src="./js/plugins/luxy.js"></script>
-    <script src="./js/plugins/wow.min.js"></script>
-    <script src="./js/index.js"></script>
-</body>
-
+    <footer>
+      <div class="container">©2025 Eisuke Tanaka.</div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>

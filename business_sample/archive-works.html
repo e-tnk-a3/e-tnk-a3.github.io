@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBGGBNEGVQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RBGGBNEGVQ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>ZeroStart サンプルサイト</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    TechForward
+                </div>
+                <ul>
+                    <a href="">
+                        事業内容
+                    </a>
+                    <a href="">
+                        業務実績
+                    </a>
+                    <a href="">
+                        会社概要
+                    </a>
+                    <a href="">
+                        お知らせ
+                    </a>
+                    <a href="">
+                        お問合せ
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--archive-works.php化するコンテンツ-->
+    <main class="archive works">
+        <div class="page-header">
+            <div class="container">
+                <span class="sub-title">業務実績</span>
+                <h1>WORKS</h1>
+            </div>            
+        </div>
+        <div class="container">
+            <div class="post-list">
+                <!--記事リンクを設定-->
+                <a class="post" href="#">
+                    <div class="eye-catch">
+                        <!--記事に設定されているアイキャッチを表示。なければこの固定値を表示-->
+                        <img src="https://images.pexels.com/photos/1181360/pexels-photo-1181360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                    <div class="post-body">
+                        <p class="post-title">
+                            導入事例：テスト工程の外注により、開発スピードと品質の向上を実現
+                        </p>
+                        <div class="post-info">
+                            <span class="post-date">2024.06.03</span>
+                            <!--設定されているカテゴリー（タクソノミー名）の数だけspanを生成する。タクソノミー名はworks_category-->
+                            <span class="post-category">カテゴリー</span>
+                            <span class="post-category">カテゴリー</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="pagenation">
+                <a class="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M15 6l-6 6l6 6" />
+                    </svg>
+                </a>
+                <span class="on">1</span>
+                <a>2</a>
+                <a>3</a>
+                <a class="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 6l6 6l-6 6" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="contact">
+        <div class="container flex">
+            <div class="left">
+                <p class="company-name">TechForward</p>
+                <a class="service-name" href="">ZEROSTART ホームページ作成</a>
+                <ul>
+                    <a href="">
+                        事業内容
+                    </a>
+                    <a href="">
+                        業務実績
+                    </a>
+                    <a href="">
+                        会社概要
+                    </a>
+                    <a href="">
+                        お知らせ
+                    </a>
+                    <a href="">
+                        お問合せ
+                    </a>
+                </ul>
+            </div>
+            <div class="right">
+                <span class="sub-title">お問合せ</span>
+                <h2>CONTACT</h2>
+                <p>
+                    ご質問、ご相談、サービスの詳細についてのお問い合わせなど、どんなことでもお気軽にご連絡ください。専門のスタッフが迅速に対応いたします。
+                </p>
+                <div class="wrapper">
+                    <div class="view-more">
+                        <a href="#">お問合せ</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M13 18l6 -6" />
+                            <path d="M13 6l6 6" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

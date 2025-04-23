@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>ZeroStart サンプルサイト</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    TechForward
+                </div>
+                <ul>
+                    <a href="">
+                        事業内容
+                    </a>
+                    <a href="">
+                        業務実績
+                    </a>
+                    <a href="">
+                        会社概要
+                    </a>
+                    <a href="">
+                        お知らせ
+                    </a>
+                    <a href="">
+                        お問合せ
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--page-contact.php化するコンテンツ-->
+    <main class="page contact">
+        <div class="page-header">
+            <div class="container">
+                <span class="sub-title">お問い合わせ</span>
+                <h1>CONTACT</h1>
+            </div>            
+        </div>
+        <div class="page-content">
+            <p>当サイトにご関心をお持ちいただき、誠にありがとうございます。</p>
+            <p>サービスに関するご質問やご不明点がございましたら、下記フォームよりお気軽にお問い合わせください。</p>
+            <p>
+                なお、ご返信には数日お時間を頂戴する場合がございます。あらかじめご了承ください。
+            </p>
+            <p>
+                皆様からのお問い合わせを心よりお待ちしております。
+            </p>
+            <form action="">
+                <div class="form-line">
+                    <label for="your-name">お名前 <span>*</span></label>
+                    <input type="text" name="your-name" id="your-name" required />
+                </div>
+
+                <div class="form-line">
+                    <label for="your-email">メールアドレス <span>*</span></label>
+                    <input type="email" name="your-email" id="your-email" required />
+                </div>
+
+                <div class="form-line">
+                    <label for="your-tel">電話番号 (任意)</label>
+                    <input type="tel" name="your-tel" id="your-tel" />
+                </div>
+
+                <div class="form-line">
+                    <label for="your-message">お問い合わせ内容 <span>*</span></label>
+                    <textarea name="your-message" id="your-message" required></textarea>
+                </div>
+
+                <div class="form-line">
+                    <label for="contact-method">ご希望の連絡方法 (任意)</label>
+                    <select name="contact-method" id="contact-method">
+                        <option value="email">メール</option>
+                        <option value="phone">電話</option>
+                    </select>
+                </div>
+
+                <div class="form-line">
+                    <label>
+                        <input type="checkbox" name="privacy-policy" id="privacy-policy" required />
+                        プライバシーポリシーに同意します <span>*</span>
+                    </label>
+                </div>
+                <button class="submit">
+                    送信する
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="contact">
+        <div class="container flex">
+            <div class="left">
+                <p class="company-name">TechForward</p>
+                <a class="service-name" href="">ZEROSTART ホームページ作成</a>
+                <ul>
+                    <a href="">
+                        事業内容
+                    </a>
+                    <a href="">
+                        業務実績
+                    </a>
+                    <a href="">
+                        会社概要
+                    </a>
+                    <a href="">
+                        お知らせ
+                    </a>
+                    <a href="">
+                        お問合せ
+                    </a>
+                </ul>
+            </div>
+            <div class="right">
+                <span class="sub-title">お問合せ</span>
+                <h2>CONTACT</h2>
+                <p>
+                    ご質問、ご相談、サービスの詳細についてのお問い合わせなど、どんなことでもお気軽にご連絡ください。専門のスタッフが迅速に対応いたします。
+                </p>
+                <div class="wrapper">
+                    <div class="view-more">
+                        <a href="#">お問合せ</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M13 18l6 -6" />
+                            <path d="M13 6l6 6" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

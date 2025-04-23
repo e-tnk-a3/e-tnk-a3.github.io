@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>ZeroStart サンプルサイト</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    TechForward
+                </div>
+                <ul>
+                    <a href="">
+                        事業内容
+                    </a>
+                    <a href="">
+                        業務実績
+                    </a>
+                    <a href="">
+                        会社概要
+                    </a>
+                    <a href="">
+                        お知らせ
+                    </a>
+                    <a href="">
+                        お問合せ
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--single.php化するコンテンツ-->
+    <main class="single">
+        <div class="page-header">
+            <div class="container">
+                <span class="sub-title">お知らせ</span>
+                <span class="page-title">NEWS</span>
+            </div>            
+        </div>
+        <section class="post">
+            <div class="container">
+                <!--記事タイトルを設定-->
+                <div class="post-info">
+                    <h1 class="post-title">
+                        <span class="post-date">2024.06.01</span>
+                        【6月】営業時間変更についてのお知らせ
+                    </h1>
+                </div>
+                <!--ここから記事情報を入力-->
+                <div class="content">
+                    <p>平素より格別のご愛顧を賜り、誠にありがとうございます。</p>
+                    <p>6月の営業時間につきまして、以下の通り変更させていただきます。</p>
+
+                    <h2>変更期間</h2>
+                    2024年6月1日(土) ～ 2024年6月30日(日)
+
+                    <h2>新しい営業時間</h2>
+                    月曜日～金曜日: 午前10時 ～ 午後7時
+                    土曜日・日曜日: 午前11時 ～ 午後6時
+
+                    <p>これに伴い、定休日はございませんが、営業時間中は一部サービスに制限が生じる場合がございます。お客様にはご不便をおかけしますが、何卒ご理解のほどよろしくお願い申し上げます。</p>
+
+                    <p>今後とも変わらぬご愛顧を賜りますよう、お願い申し上げます。</p>
+                </div>
+                <!--前後の記事情報-->
+                <div class="post-nav">
+                    <div class="prev">
+                        <span>前の記事</span>
+                        <a href="#">【重要】システムメンテナンスのお知らせ</a>
+                    </div>
+                    <div class="next">
+                        <span>次の記事</span>
+                        <a href="#">【重要】プライバシーポリシー改定のお知らせ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contact">
+        <div class="container flex">
+            <div class="left">
+                <p class="company-name">TechForward</p>
+                <a class="service-name" href="">ZEROSTART ホームページ作成</a>
+                <ul>
+                    <a href="">
+                        事業内容
+                    </a>
+                    <a href="">
+                        業務実績
+                    </a>
+                    <a href="">
+                        会社概要
+                    </a>
+                    <a href="">
+                        お知らせ
+                    </a>
+                    <a href="">
+                        お問合せ
+                    </a>
+                </ul>
+            </div>
+            <div class="right">
+                <span class="sub-title">お問合せ</span>
+                <h2>CONTACT</h2>
+                <p>
+                    ご質問、ご相談、サービスの詳細についてのお問い合わせなど、どんなことでもお気軽にご連絡ください。専門のスタッフが迅速に対応いたします。
+                </p>
+                <div class="wrapper">
+                    <div class="view-more">
+                        <a href="#">お問合せ</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M13 18l6 -6" />
+                            <path d="M13 6l6 6" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
