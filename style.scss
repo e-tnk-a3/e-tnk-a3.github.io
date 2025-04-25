@@ -344,7 +344,7 @@ main {
           h3 {
             color: #fff;
             font-weight: 400;
-            margin-bottom: 100px;
+            margin-bottom: calc(20px + 2vw);
             padding-bottom: 20px;
             border-bottom: 1px solid #eaeaea;
             @media (max-width: $bp-s) {
