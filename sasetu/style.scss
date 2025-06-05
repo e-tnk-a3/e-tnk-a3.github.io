@@ -1,0 +1,73 @@
+:root {
+  --color_gray: hsla(0, 0%, 78%, 0.15);
+  --color_gray2: hsl(0deg 100% 75% / 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: "Noto Sans JP";
+}
+p {
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 500;
+  padding: 1em;
+
+  span {
+    background-color: unset !important;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(80%, transparent),
+      color-stop(80%, #f78da8d5)
+    );
+    background: linear-gradient(to bottom, transparent 80%, #f78da8d5 80%);
+  }
+}
+main {
+  section {
+    width: 100%;
+    .container {
+      width: 95vw;
+      max-width: 500px;
+      margin: auto;
+      border: 1px solid #eaeaea;
+      border-top: unset;
+      border-bottom: unset;
+      padding-bottom: 50px;
+
+      h2 {
+        width: 100%;
+        text-align: center;
+        padding: 2vw;
+        border: 4px double #eaeaea;
+        border-left: unset;
+        border-right: unset;
+        background: linear-gradient(
+          -45deg,
+          transparent 25%,
+          var(--color_gray) 25%,
+          var(--color_gray) 50%,
+          transparent 50%,
+          transparent 75%,
+          var(--color_gray) 75%,
+          var(--color_gray)
+        );
+        background-clip: padding-box;
+        background-size: 4px 4px;
+      }
+      .image-wrapper {
+        width: 100%;
+        padding-bottom: 25px;
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
