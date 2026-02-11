@@ -537,6 +537,15 @@ main {
           object-fit: cover;
         }
       }
+      .campaign-item {
+        padding: 1em;
+        border: 1px solid #eaeaea;
+        h2 {
+          margin-bottom: 1em;
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
     }
   }
 

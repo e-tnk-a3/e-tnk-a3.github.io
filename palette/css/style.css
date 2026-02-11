@@ -893,6 +893,17 @@ main section.campaign .campaign-wrapper .img-container img {
      object-fit: cover;
 }
 
+main section.campaign .campaign-wrapper .campaign-item {
+  padding: 1em;
+  border: 1px solid #eaeaea;
+}
+
+main section.campaign .campaign-wrapper .campaign-item h2 {
+  margin-bottom: 1em;
+  font-size: 24px;
+  font-weight: 500;
+}
+
 main section.infomation {
   min-height: 100vh;
   background: url(../imgaes/site-bg.png);
